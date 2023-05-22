@@ -1,40 +1,31 @@
-.bicicleta {
-  height: 600px;
-  background-color: aquamarine;
-  background-image: url("/web/img/bicicleta.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  /* background: aquamarine url("/web/img/bicicleta.jpg"); */
-  display: flex;
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
 }
 
-h1 {
-  margin: auto;
-  background: white;
-  padding: 1rem;
+a:hover {
+  font-size: 3rem;
+  background: #adf;
+  color: #147;
 }
 
-.pattern {
-  height: 300px;
-  background-color: lightcoral;
-  background-image: url("/web/img/pattern.svg");
-  background-repeat: repeat;
-  /* background-size: 500px; */
+a:focus {
+  background: #cfa;
+  color: #371;
+  /* outline: none; */
 }
 
-.linear {
-  height: 200px;
-  background-image: linear-gradient(
-    to right,
-    aquamarine 0%,
-    lightcoral 10%,
-    blue 20%,
-    yellow 30%
-  );
+a:active {
+  background: #ffa;
+  color: #761;
 }
 
-.radial {
-  height: 200px;
-  background-image: radial-gradient(circle, blue, red, green);
-}
+/* a:visited {
+  background: #fda;
+  color: #731;
+} */
