@@ -80,6 +80,7 @@ img {
   display: grid;
   grid-template-columns: 2.5rem 1fr;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .vantagens-itens p {
