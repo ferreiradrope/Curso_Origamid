@@ -33,11 +33,13 @@ nav a {
 
 nav a:hover {
   border-color: #ee2211;
+  transition: all 0.3s ease;
 }
 
 .vermais {
   background: #ee2211;
   padding: 0.9375rem 2.5rem;
+  border: 0.125rem solid #ee2211;
   border-radius: 0.25rem;
   text-decoration: none;
   color: #f7f7f7;
@@ -45,7 +47,10 @@ nav a:hover {
 }
 
 .vermais:hover {
-  background: #900;
+  background: #fff;
+  border-color: #ee2211;
+  color: #ee2211;
+  transition: all 0.3s ease;
 }
 
 p {
