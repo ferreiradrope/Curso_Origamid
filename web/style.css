@@ -1,32 +1,35 @@
-h1::after {
-  content: "";
+img {
+  max-width: 100%;
   display: block;
-  width: 40px;
-  height: 4px;
-  background: #caf;
 }
 
-/* h1::after {
-  content: "depois";
-} */
-
-ul {
-  list-style: none;
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-li {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+h1 {
+  grid-column: 1/-1;
 }
 
-li::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(#caf, #fff);
-  border: 2px solid #caf;
-  margin-right: 10px;
-  border-radius: 100%;
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    background: lightcoral;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  p {
+    background: lightblue;
+  }
+}
+
+@media print {
+  body {
+    background: pink;
+  }
 }
