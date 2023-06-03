@@ -30,6 +30,6 @@ h1 {
 
 @media print {
   body {
-    background: pink;
+    background: black;
   }
 }
