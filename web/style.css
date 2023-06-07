@@ -7,6 +7,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cover img {
@@ -16,5 +19,5 @@ img {
 }
 
 p {
-  font-size: 1.5rem;
+  max-width: 60ch;
 }
