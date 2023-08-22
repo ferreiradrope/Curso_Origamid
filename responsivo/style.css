@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.375rem;
+  gap: 2.5rem;
+  justify-content: center;
+  color: black;
+  padding: 1.25rem;
+}
+
+nav a {
+  background: #fff;
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: black;
+  border: 0.125rem solid #fff;
+}
+
+nav a:hover {
+  border-color: #ee2211;
+  transition: all 0.3s ease;
+}
+
+.vermais {
+  background: #ee2211;
+  padding: 0.9375rem 2.5rem;
+  border: 0.125rem solid #ee2211;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #f7f7f7;
+  display: inline-block;
+}
+
+.vermais:hover {
+  background: #fff;
+  border-color: #ee2211;
+  color: #ee2211;
+  transition: all 0.3s ease;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 31, 25rem;
+  position: relative;
+  z-index: 0;
+  background-position: cover;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+  margin-top: 0rem;
+}
+
+.introducao {
+  background: #fff;
+  text-align: right;
+  padding: 1.25rem;
+  align-content: center;
+  display: grid;
+  justify-items: end;
+  position: relative;
+}
+
+.introducao::after {
+  content: "";
+  display: inline-block;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #ee2211;
+  position: absolute;
+  z-index: 1;
+  right: -1.85rem;
+  top: 2rem;
+}
+
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #d3d3d3;
+  text-align: right;
+  padding: 30px;
+  align-self: center;
+  background-image: url("/web/img2/onda.svg");
+  word-break: break-all;
+}
+
+.vantagens {
+  background: #fff;
+  padding: 2, 5rem;
+}
+
+.vantagens-itens {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  padding: 0.2rem;
+}
+.vantagens-itens p {
+  grid-column: 2;
+}
+
+section ul {
+  list-style: none;
+}
+
+section li:nth-child(odd) {
+  background: #f7f7f7;
+  margin-right: 3rem;
+}
+
+section li:hover {
+  border-left: 0.3125rem solid #ee2211;
+  position: relative;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
