@@ -16,7 +16,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 4.375rem;
-  gap: 2.5rem;
+  gap: 4rem;
   justify-content: center;
   color: black;
   padding: 1.25rem;
@@ -106,7 +106,7 @@ article {
   text-align: right;
   padding: 30px;
   align-self: center;
-  background-image: url("/web/img2/onda.svg");
+  background-image: url("/responsivo/img/onda.svg");
   word-break: break-all;
 }
 
@@ -161,7 +161,24 @@ footer {
 }
 
 @media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 100px;
+  }
   .conteudo {
     grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::after {
+    display: none;
+  }
+  .subtitulo {
+    font-size: 3rem;
   }
 }
