@@ -152,10 +152,16 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  main {
+  .conteudo-vantagem {
     grid-template-columns: 1fr;
   }
   .subtitulo {
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo {
+    grid-template-columns: 1fr;
   }
 }
