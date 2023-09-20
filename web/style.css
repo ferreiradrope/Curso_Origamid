@@ -1,40 +1,16 @@
-p [required] {
-  border: 2px solid tomato;
+body {
+  font-size: 2rem;
 }
 
-[href="#contato"] {
-  border: 2px solid greenyellow;
+#produtos {
+  color: lightgreen;
 }
 
-[href^="#"] {
-  background: tomato;
-}
-
-[href$=".com"] {
-  background: green;
-}
-
-section > h2 {
+.titulo {
   color: tomato;
-}
-
-p {
-  margin: 0px;
-}
-
-article {
-  background: lightgreen;
   padding: 10px;
 }
 
-p + p {
-  margin-top: 20px;
-}
-
-body {
+.titulo {
   color: blue;
 }
-
-/* * {
-  border: 2px solid red;
-} */
