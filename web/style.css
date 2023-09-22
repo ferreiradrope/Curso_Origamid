@@ -1,16 +1,16 @@
-body {
-  font-size: 2rem;
+:root {
+--fundo
 }
 
-#produtos {
-  color: lightgreen;
+h1 {
+  font-size: var(--font-grande);
+  color: var(--cor-primaria);
 }
 
-.titulo {
-  color: tomato;
-  padding: 10px;
-}
-
-.titulo {
-  color: blue;
+p {
+  --roxo: #222;
+  font-size: calc(var(--font-grande) / 2);
+  margin-top: var(--font-grande);
+  color: var(--cor-primaria);
+  border: var(--borda);
 }
