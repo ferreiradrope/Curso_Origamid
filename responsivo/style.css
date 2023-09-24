@@ -1,8 +1,29 @@
+:root {
+  --cor-primaria: #ee2211;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("/responsivo/img/onda-clara.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("/responsivo/img/onda-escura.svg");
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   justify-content: center;
+  color: var(--texto);
 }
 
 header {
@@ -18,38 +39,38 @@ nav ul {
   margin-top: 4.375rem;
   gap: 4rem;
   justify-content: center;
-  color: black;
+  color: var(--texto);
   padding: 1.25rem;
 }
 
 nav a {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 1.25rem 2.5rem;
   border-radius: 0.25rem;
   text-decoration: none;
-  color: black;
-  border: 0.125rem solid #fff;
+  color: var(--texto);
+  border: 0.125rem solid var(--fundo-2);
 }
 
 nav a:hover {
-  border-color: #ee2211;
+  border-color: var(--cor-primaria);
   transition: all 0.3s ease;
 }
 
 .vermais {
-  background: #ee2211;
+  background: var(--cor-primaria);
   padding: 0.9375rem 2.5rem;
-  border: 0.125rem solid #ee2211;
+  border: 0.125rem solid var(--cor-primaria);
   border-radius: 0.25rem;
   text-decoration: none;
-  color: #f7f7f7;
+  color: #ffffff;
   display: inline-block;
 }
 
 .vermais:hover {
-  background: #fff;
-  border-color: #ee2211;
-  color: #ee2211;
+  background: #900;
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
   transition: all 0.3s ease;
 }
 
@@ -73,7 +94,7 @@ article {
 }
 
 .introducao {
-  background: #fff;
+  background: var(--fundo-2);
   text-align: right;
   padding: 1.25rem;
   align-content: center;
@@ -87,7 +108,7 @@ article {
   display: inline-block;
   width: 3.75rem;
   height: 0.25rem;
-  background: #ee2211;
+  background: var(--cor-primaria);
   position: absolute;
   z-index: 1;
   right: -1.85rem;
@@ -102,16 +123,16 @@ article {
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: #d3d3d3;
+  color: var(--subtitulo);
   text-align: right;
   padding: 30px;
   align-self: center;
-  background-image: url("/responsivo/img/onda.svg");
+  background-image: var(--onda);
   word-break: break-all;
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 2, 5rem;
 }
 
@@ -133,17 +154,17 @@ section ul {
 }
 
 section li:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--fundo-1);
   margin-right: 3rem;
 }
 
 section li:hover {
-  border-left: 0.3125rem solid #ee2211;
+  border-left: 0.3125rem solid var(--cor-primaria);
   position: relative;
 }
 
 footer {
-  background: #fff;
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
